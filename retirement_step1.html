@@ -36,13 +36,14 @@
             top: 0;
             z-index: 100;
         }
-        
-        .nav {
+
+        .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 0 20px;
         }
-        
+
         .logo {
             display: flex;
             align-items: center;
@@ -50,57 +51,58 @@
             font-weight: bold;
             color: #9f7aea;
         }
-        
+
         .logo i {
             margin-right: 8px;
             font-size: 24px;
             color: #A6A6D2;
         }
-        
-        /* Progress Bar */
-        .progress-section {
-            padding: 30px 0;
+
+        .tagline {
+            font-size: 16px;
+            color: #718096;
             text-align: center;
+            max-width: 400px;
         }
-        
-        .progress-bar {
-            background: #e2e8f0;
-            height: 8px;
-            border-radius: 20px;
-            margin: 20px 0;
-            overflow: hidden;
-            position: relative;
+
+        .menu-btn {
+            background: none;
+            border: none;
+            font-size: 20px;
+            color: #4a5568;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
         }
-        
-        .progress-fill {
-            background: linear-gradient(90deg, #9f7aea 0%, #A6A6D2 100%);
-            height: 100%;
-            width: 33.33%;
-            border-radius: 20px;
-            transition: width 0.5s ease;
-            position: relative;
-        }
-        
-        .progress-fill::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            animation: shimmer 2s infinite;
-        }
-        
-        @keyframes shimmer {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
-        }
-        
-        .progress-text {
+
+        .menu-btn:hover {
+            background: #f7fafc;
             color: #9f7aea;
-            font-weight: bold;
-            margin-top: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-link {
+            color: #4a5568;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background: #f7fafc;
+            color: #9f7aea;
+        }
+
+        .nav-link.active {
+            background: #9f7aea;
+            color: white;
         }
         
         /* Main Content */
@@ -408,15 +410,21 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
+       <!-- Header -->
     <header class="header">
         <div class="container">
-            <nav class="nav">
+            <div class="header-content">
                 <div class="logo">
-                    <i class="fas fa-piggy-bank"></i>
-                    退休規劃師
+                    <i class="fas fa-umbrella-beach"></i>
+                    退休規劃助手
                 </div>
-            </nav>
+                <nav class="nav-links">
+                    <a href="index.html" class="nav-link active">首頁</a>
+                    <a href="retirement_step1.html" class="nav-link">開始規劃</a>
+                    <a href="#" class="nav-link">關於我們</a>
+                    <a href="#" class="nav-link">常見問題</a>
+                </nav>
+            </div>
         </div>
     </header>
 
