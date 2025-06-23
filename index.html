@@ -143,35 +143,6 @@
             background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%239f7aea;stop-opacity:0.8" /><stop offset="100%" style="stop-color:%23ed8936;stop-opacity:0.8" /></linearGradient></defs><circle cx="200" cy="300" r="80" fill="%23ffffff" opacity="0.3"/><circle cx="800" cy="200" r="60" fill="%23ffffff" opacity="0.2"/><circle cx="700" cy="700" r="100" fill="%23ffffff" opacity="0.25"/><rect x="100" y="600" width="200" height="120" rx="20" fill="%23ffffff" opacity="0.2"/><rect x="600" y="500" width="250" height="150" rx="25" fill="%23ffffff" opacity="0.15"/></svg>') center/cover;
         }
 
-        .hero-icons {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 100%;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-icon {
-            color: white;
-            font-size: 3rem;
-            opacity: 0.9;
-            animation: float 3s ease-in-out infinite;
-        }
-
-        .hero-icon:nth-child(2) {
-            animation-delay: 1s;
-        }
-
-        .hero-icon:nth-child(3) {
-            animation-delay: 2s;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-
         .hero-text {
             font-size: 20px;
             color: #2d3748;
